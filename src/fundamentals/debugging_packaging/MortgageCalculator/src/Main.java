@@ -1,3 +1,5 @@
+package fundamentals.debugging_packaging.MortgageCalculator.src;
+
 public class Main {
     public static void main(String[] args) {
         int principal = (int) MortgageCalculator.readNumber("Principal ($1k - $1M)", 1000, 1_000_000);

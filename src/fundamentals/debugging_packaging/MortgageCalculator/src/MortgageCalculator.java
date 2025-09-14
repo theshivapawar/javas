@@ -1,3 +1,5 @@
+package fundamentals.debugging_packaging.MortgageCalculator.src;
+
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
