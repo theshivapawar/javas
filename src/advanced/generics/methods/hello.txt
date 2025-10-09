@@ -1,0 +1,64 @@
+    // ? extends User - User or anything that extends User
+    // CAP#1 extends User
+    public static void readUsers(List<? extends User> users) {
+        for (int i = 0; i < users.getCount(); i++)
+            System.out.println(users.get(i));
+
+        // Reading
+        User user = users.get(0);
+
+        // Adding
+        //users.add(new User("Sahaj")) // not possible
+    }
+
+    // ? super User - User or its any parent Object or other
+    // CAP#1 super User (that is Object - most generic super class)
+    public static void addUsers(List<? super User> users) {
+        // Adding
+        users.add(new User("Sam"));
+        //users.add(new Integer(10)) // not a parent of User
+
+        // Reading
+        //User user = users.get(0); // can not store to User because ? is Object
+        Object userObject = users.get(0);
+        User user = (User) userObject;
+        System.out.println(user);
+    }
+
+    // ? super Integer
+    // CAP#1 super Integer
+    // CAP#1 can be Integer, Number, Object
+    public static void addNumbers(List<? super Integer> numbers) {
+        numbers.add(10);
+        numbers.add();
+    }
+
+    // ? super Instructor - Instructor or its any parent User or Object
+    // CAP#1 super Instructor
+    public static void addInstructors(List<? super Instructor> instructors) {
+        instructors.add(new Instructor("Marry"));
+
+        Object user = instructors.get(0);
+    }
+
+
+    // ? wildcard character - anything
+    // CAP#1 at compile time
+    public static void printObjects(List<?> objects) {
+        for (int i = 0; i < objects.getCount(); i++)
+            System.out.println(objects.get(i));
+
+        Object object = objects.get(0);
+    }
+
+    /*
+    public static void printObjects(List<Object> objects) {
+        for (int i = 0; i < objects.getCount(); i++)
+            System.out.println(objects.get(i));
+    }
+    */
+
+    public static void printUsers(List<User> users) {
+        for (int i = 0; i < users.getCount(); i++)
+            System.out.println(users.get(i));
+    }
