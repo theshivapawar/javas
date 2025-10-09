@@ -1,4 +1,4 @@
-package advanced.exceptions.generics.need;
+package advanced.generics.need;
 
 public class List {
     private int[] integers;
@@ -13,7 +13,7 @@ public class List {
     }
 
     public int get(int index) {
-        if (index < 0 || index >= integers.length)
+        if (index < 0 || index >= count)
             throw new IllegalArgumentException("Invalid Index");
 
         return integers[index];

@@ -1,4 +1,4 @@
-package advanced.exceptions.generics.solution;
+package advanced.generics.solution;
 
 public class GenericAndPrimitiveTypes {
     public static void main(String[] args) {

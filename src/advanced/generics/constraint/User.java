@@ -1,4 +1,4 @@
-package advanced.exceptions.generics.constraint;
+package advanced.generics.constraint;
 
 public class User implements Comparable<User> {
     private String name;

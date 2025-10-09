@@ -1,6 +1,6 @@
-package advanced.exceptions.generics.poor_solution;
+package advanced.generics.poor_solution;
 
-import advanced.exceptions.generics.need.User;
+import advanced.generics.need.User;
 
 public class Main {
     public static void main(String[] args) {

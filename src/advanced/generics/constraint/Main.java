@@ -1,4 +1,4 @@
-package advanced.exceptions.generics.constraint;
+package advanced.generics.constraint;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package advanced.exceptions.generics.solution;
+package advanced.generics.solution;
 
 public class List<T> {
     private T[] items;
@@ -13,7 +13,7 @@ public class List<T> {
     }
 
     public T get(int index) {
-        if (index < 0 || index >= items.length)
+        if (index < 0 || index >= count)
             throw new IllegalArgumentException("Invalid Index");
 
         return items[index];

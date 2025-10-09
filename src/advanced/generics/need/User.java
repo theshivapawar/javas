@@ -1,4 +1,4 @@
-package advanced.exceptions.generics.need;
+package advanced.generics.need;
 
 public class User {
     private String name;

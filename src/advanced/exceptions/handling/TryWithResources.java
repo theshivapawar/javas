@@ -19,6 +19,17 @@ public class TryWithResources {
         catch (IOException e) {
             System.out.println("Could not read data.");
         }
+        /*
+        finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+        */
 
         try (
             var reader = new FileReader("input.txt");

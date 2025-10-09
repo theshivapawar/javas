@@ -1,4 +1,4 @@
-package advanced.exceptions.generics.constraint;
+package advanced.generics.constraint;
 
 public class NumberList<T extends Number> {
     private T[] numbers;
@@ -13,7 +13,7 @@ public class NumberList<T extends Number> {
     }
 
     public T get(int index) {
-        if (index < 0 || index >= numbers.length)
+        if (index < 0 || index >= count)
             throw new IllegalArgumentException("Invalid Index");
 
         return numbers[index];

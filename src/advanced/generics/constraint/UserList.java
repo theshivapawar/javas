@@ -1,25 +1,25 @@
-package advanced.exceptions.generics.need;
+package advanced.generics.constraint;
 
-public class UserList {
-    private User[] users;
+public class UserList<T extends User & Comparable<User>> {
+    private T[] users;
     private int count;
 
     public UserList(int length) {
-        users = new User[length];
+        users = (T[]) new User[length];
     }
 
-    public void add(User user) {
+    public void add(T user) {
         users[count++] = user;
     }
 
-    public User get(int index) {
-        if (index < 0 || index >= users.length)
+    public T get(int index) {
+        if (index < 0 || index >= count)
             throw new IllegalArgumentException("Invalid Index");
 
         return users[index];
     }
 
-    public User[] getUsers() {
+    public T[] getUsers() {
         return users;
     }
 

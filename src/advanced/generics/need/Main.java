@@ -1,4 +1,4 @@
-package advanced.exceptions.generics.need;
+package advanced.generics.need;
 
 import java.util.Arrays;
 
